@@ -23,6 +23,7 @@ services:
       context: api/prisma
       dockerfile: Dockerfile
     volumes:
+      - ./api:/app
       - /app/prisma
   api:
     links:

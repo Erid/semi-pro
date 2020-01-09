@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY prisma ./prisma/
 
-RUN npm install --unsafe-perm
+RUN npm install
 RUN prisma2 generate
 
 CMD [ "npm", "run", "dev" ]
