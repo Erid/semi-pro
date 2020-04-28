@@ -1,0 +1,28 @@
+{
+  "name": "semi-pro",
+  "version": "1.0.0",
+  "description": "Application to track esports tournaments",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose build",
+    "stop": "docker-compose down",
+    "clean": "docker system prune -af",
+    "clean:volumes": "docker volume prune -f",
+    "seed": "docker exec -it prisma npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erid/semi-pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erid/semi-pro/issues"
+  },
+  "homepage": "https://github.com/Erid/semi-pro#readme"
+}
